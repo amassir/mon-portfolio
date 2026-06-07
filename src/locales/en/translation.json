@@ -79,28 +79,23 @@
     "subtitle": "A selection of projects I have worked on, demonstrating my full-stack development skills and passion for creation.",
     "list": [
       {
-        "title": "Recipe sharing website",
-        "description": "Development of a recipe sharing website with interactive interface and user management."
+        "title": "Legalia — AI-powered Insurance Contract Analysis",
+        "description": "RAG pipeline that simplifies legal clauses and identifies risks for individuals. Microservices architecture: SpringBoot REST API + Python AI service + Angular split-screen interface.",
+        "tech": ["SpringBoot", "Python", "Angular"],
+        "github": "https://github.com/amassir/Legalia",
+        "period": "October 2025 – April 2026"
       },
       {
-        "title": "E-commerce website",
-        "description": "Design of an online store with transaction management, users and catalog."
+        "title": "Techloop",
+        "description": "Web application for managing staff missions and skills. Node.js/Express REST API, semi-automatic recommendation system and MySQL database.",
+        "tech": ["Angular", "Node.js", "MySQL"],
+        "github": "https://github.com/amassir/techloop"
       },
       {
-        "title": "Video game (shmup)",
-        "description": "Design and programming of a shoot 'em up type game in Java."
-      },
-      {
-        "title": "Bike rental system",
-        "description": "Autonomous bike rental system with station and rental management."
-      },
-      {
-        "title": "Real-time auction application",
-        "description": "Real-time auction application with WebSocket communication and Node.js backend."
-      },
-      {
-        "title": "Railroad Ink (digital)",
-        "description": "Digital version of the multiplayer game, network management and interactive interface."
+        "title": "MamySure",
+        "description": "Web application dedicated to monitoring elderly people. Intuitive HTML/CSS/JS interface, Domoticz integration for remote home automation control and secure database.",
+        "tech": ["HTML", "JavaScript", "PHP", "SQL"],
+        "github": "https://github.com/amassir/Mamysure"
       }
     ]
   },

@@ -79,28 +79,23 @@
     "subtitle": "Une sélection de projets sur lesquels j'ai travaillé, démontrant mes compétences en développement full-stack et ma passion pour la création.",
     "list": [
       {
-        "title": "Site de partage de recettes",
-        "description": "Développement d'un site de partage de recettes avec interface interactive et gestion des utilisateurs."
+        "title": "Legalia — Analyse de contrats d'assurance par IA",
+        "description": "Pipeline RAG qui vulgarise les clauses juridiques et identifie les risques pour les particuliers. Architecture microservices : API REST SpringBoot + service IA Python + interface split-screen Angular.",
+        "tech": ["SpringBoot", "Python", "Angular"],
+        "github": "https://github.com/amassir/Legalia",
+        "period": "Octobre 2025 – Avril 2026"
       },
       {
-        "title": "Site e-commerce",
-        "description": "Conception d'une boutique en ligne avec gestion des transactions, utilisateurs et catalogue."
+        "title": "Techloop",
+        "description": "Application web de gestion des missions et compétences du personnel. API REST Node.js/Express, système de recommandation semi-automatique et base de données MySQL.",
+        "tech": ["Angular", "Node.js", "MySQL"],
+        "github": "https://github.com/amassir/techloop"
       },
       {
-        "title": "Jeu vidéo (shmup)",
-        "description": "Conception et programmation d'un jeu de type shoot 'em up en Java."
-      },
-      {
-        "title": "Système de location de vélos",
-        "description": "Système autonome de location de vélos avec gestion des stations et des locations."
-      },
-      {
-        "title": "Application d'enchères en temps réel",
-        "description": "Application d'enchères en temps réel avec communication via WebSocket et backend Node.js."
-      },
-      {
-        "title": "Railroad Ink (numérique)",
-        "description": "Version numérique du jeu multijoueur, gestion réseau et interface interactive."
+        "title": "MamySure",
+        "description": "Application web dédiée au suivi des personnes âgées. Interface intuitive en HTML/CSS/JS, intégration Domoticz pour la gestion domotique à distance et base de données sécurisée.",
+        "tech": ["HTML", "JavaScript", "PHP", "SQL"],
+        "github": "https://github.com/amassir/Mamysure"
       }
     ]
   },
