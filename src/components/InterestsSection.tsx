@@ -1,18 +1,47 @@
-import { Gamepad2, Music, Plane } from 'lucide-react';
+import { Dumbbell, Cpu, Languages } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import { useClickSound } from '@/hooks/useClickSound';
 import { useLocale } from '@/lib/LocaleProvider';
 
-const interests = [
-  { icon: Plane, titleKey: 'interest_travel_title', descKey: 'interest_travel_desc' },
-  { icon: Gamepad2, titleKey: 'interest_sport_title', descKey: 'interest_sport_desc' },
-  { icon: Music, titleKey: 'interest_music_title', descKey: 'interest_music_desc' },
+interface Interest {
+  name: string;
+  details: string;
+  icon: React.ElementType;
+}
+
+interface Language {
+  name: string;
+  level: string;
+}
+
+const interestsFR: Interest[] = [
+  { name: 'Sport', details: 'Football, Musculation', icon: Dumbbell },
+  { name: 'Nouvelles technologies', details: 'IA, Big Data', icon: Cpu },
+];
+
+const interestsEN: Interest[] = [
+  { name: 'Sport', details: 'Football, Weightlifting', icon: Dumbbell },
+  { name: 'New Technologies', details: 'AI, Big Data', icon: Cpu },
+];
+
+const languagesFR: Language[] = [
+  { name: 'Français', level: 'Bilingue' },
+  { name: 'Anglais', level: 'Intermédiaire avancé — B2' },
+];
+
+const languagesEN: Language[] = [
+  { name: 'French', level: 'Bilingual' },
+  { name: 'English', level: 'Advanced Intermediate — B2' },
 ];
 
 const InterestsSection = () => {
   const { playClick } = useClickSound();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+
+  const interests = locale === 'en' ? interestsEN : interestsFR;
+  const languages = locale === 'en' ? languagesEN : languagesFR;
+  const languagesTitle = locale === 'en' ? 'Languages' : 'Langues';
 
   return (
     <section id="interests" className="section-padding relative">
@@ -31,9 +60,10 @@ const InterestsSection = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Interests */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
           {interests.map((interest, index) => (
-            <AnimatedSection key={interest.titleKey} delay={index * 0.1}>
+            <AnimatedSection key={interest.name} delay={index * 0.1}>
               <motion.div
                 whileHover={{ scale: 1.05, y: -8 }}
                 whileTap={{ scale: 0.98 }}
@@ -47,12 +77,37 @@ const InterestsSection = () => {
                 >
                   <interest.icon className="w-8 h-8 text-primary" />
                 </motion.div>
-                <h3 className="font-display font-semibold text-lg mb-2">{t(interest.titleKey)}</h3>
-                <p className="text-muted-foreground text-sm">{t(interest.descKey)}</p>
+                <h3 className="font-display font-semibold text-lg mb-1">{interest.name}</h3>
+                <p className="text-muted-foreground text-sm">{interest.details}</p>
               </motion.div>
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Languages */}
+        <AnimatedSection delay={0.3}>
+          <div className="max-w-2xl mx-auto">
+            <h3 className="font-display text-xl font-semibold mb-6 flex items-center gap-2">
+              <Languages className="w-5 h-5 text-primary" />
+              {languagesTitle}
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {languages.map((lang, index) => (
+                <motion.div
+                  key={lang.name}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="glass rounded-xl p-4 flex items-center justify-between"
+                >
+                  <span className="font-medium">{lang.name}</span>
+                  <span className="text-sm text-primary font-medium">{lang.level}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );

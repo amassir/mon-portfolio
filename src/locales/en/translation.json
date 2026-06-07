@@ -149,18 +149,15 @@
     "titleHighlight": "Interest",
     "subtitle": "Beyond code, here is what I am passionate about and what motivates me daily.",
     "list": [
-      {
-        "title": "Travel",
-        "description": "Discovering new cultures and inspirations for my projects."
-      },
-      {
-        "title": "Sports",
-        "description": "Regular physical activity to keep a clear and productive mind."
-      },
-      {
-        "title": "Streaming / Photography",
-        "description": "Content creation and photo editing to share my experiences."
-      }
+      { "name": "Sport", "details": "Football, Weightlifting" },
+      { "name": "New Technologies", "details": "AI, Big Data" }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "list": [
+      { "name": "French", "level": "Bilingual" },
+      { "name": "English", "level": "Advanced Intermediate — B2" }
     ]
   },
   "contact": {
