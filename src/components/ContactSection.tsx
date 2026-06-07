@@ -90,9 +90,9 @@ const ContactSection = () => {
 
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: t('contact_email_label'), value: 'benhammanemedamine@gmail.com' },
+                  { icon: Mail, label: t('contact_email_label'), value: 'abdellah.massir@toulouse.miage.fr' },
                   { icon: Phone, label: t('contact_phone_label'), value: '+33 6 59 67 88 46' },
-                  { icon: MapPin, label: t('contact_location_label'), value: 'Lille, France' },
+                  { icon: MapPin, label: t('contact_location_label'), value: 'Toulouse, France' },
                 ].map((item, index) => (
                   <motion.div
                     key={item.label}

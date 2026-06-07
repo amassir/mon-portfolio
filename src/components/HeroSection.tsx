@@ -1,8 +1,8 @@
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useClickSound } from '@/hooks/useClickSound';
-import photo from '@/assert/photoPORTFOLIO.jpeg';
-import cvFile from '@/assert/CVBENHAMMANE.pdf';
+import photo from '@/assert/photo.jpeg';
+import cvFile from '@/assert/cv.pdf';
 import { toast } from '@/hooks/use-toast';
 import { useLocale } from '@/lib/LocaleProvider';
 import useParallax from '@/hooks/useParallax';
@@ -24,7 +24,7 @@ const HeroSection = () => {
     try {
       const a = document.createElement('a');
       a.href = cvFile;
-      a.download = 'CV_Amine_Benhammane.pdf';
+      a.download = 'CV_Abdellah_Massir.pdf';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glow animate-pulse-glow">
               <img
                 src={photo}
-                alt="Photo d'Amine Benhammane"
+                alt="Photo d'Abdellah Massir"
                 className="w-full h-full object-cover rounded-full ring-4 ring-primary/20 shadow-lg"
                 style={{ objectPosition: '80% 15%' }}
               />
@@ -79,7 +79,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="font-display text-4xl md:text-6xl font-bold mb-6"
             >
-              <span className="text-gradient">Amine Benhammane</span>
+              <span className="text-gradient">Abdellah Massir</span>
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -119,15 +119,6 @@ const HeroSection = () => {
                 <Download size={18} />
                 {t('hero_download_cv')}
               </button>
-              <a
-                href="https://adamine.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => handleClick()}
-                className="border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-lg font-medium hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg"
-              >
-                💼 Activité Freelance
-              </a>
             </motion.div>
 
             {/* Social Links */}
@@ -138,7 +129,7 @@ const HeroSection = () => {
               className="flex items-center gap-4 justify-center lg:justify-start mt-6"
             >
               <a
-                href="https://github.com/benhammane"
+                href="https://github.com/amassir"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => handleClick()}
@@ -147,7 +138,7 @@ const HeroSection = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/benhammaneamine/"
+                href="https://www.linkedin.com/in/abdellah-massir-411376302/"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => handleClick()}
@@ -156,7 +147,7 @@ const HeroSection = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:benhammanemedamine@gmail.com"
+                href="mailto:abdellah.massir@toulouse.miage.fr"
                 onClick={() => handleClick()}
                 className="p-3 glass rounded-lg hover:bg-primary/10 transition-smooth hover-lift glow-sm active:scale-95"
               >
