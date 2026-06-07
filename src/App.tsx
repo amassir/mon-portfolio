@@ -7,8 +7,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { LocaleProvider } from "@/lib/LocaleProvider";
 import { ThemeProvider } from "@/lib/ThemeProvider";
-import ChatBot from "./components/ChatBot";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,8 +16,6 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
-
-          <ChatBot />
 
           <BrowserRouter>
             <Routes>
