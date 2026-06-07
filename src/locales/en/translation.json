@@ -136,20 +136,16 @@
     "subtitle": "Academic journey and training followed.",
     "list": [
       {
-        "degree": "L1 Computer Science Mathematics",
-        "school": "Université Picardie Jules Verne, Amiens"
+        "degree": "Master MIAGE — Computer Methods Applied to Business Management",
+        "school": "Université Paul Sabatier, Toulouse",
+        "period": "September 2025 – August 2027",
+        "details": "ITN track (Digital Transformation Engineering)"
       },
       {
-        "degree": "L2 Computer Science",
-        "school": "Université de Lille"
-      },
-      {
-        "degree": "L3 Computer Science",
-        "school": "Université de Lille"
-      },
-      {
-        "degree": "M1 MIAGE",
-        "school": "Université de Lille"
+        "degree": "Bachelor MIAGE — Computer Methods Applied to Business Management",
+        "school": "Université Paul Sabatier, Toulouse",
+        "period": "September 2022 – August 2025",
+        "details": ""
       }
     ]
   },

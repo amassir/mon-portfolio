@@ -136,20 +136,16 @@
     "subtitle": "Parcours universitaire et formations suivies.",
     "list": [
       {
-        "degree": "L1 Informatique Mathématique",
-        "school": "Université Picardie Jules Verne, Amiens"
+        "degree": "Master MIAGE — Méthodes Informatiques Appliquées à la Gestion des Entreprises",
+        "school": "Université Paul Sabatier, Toulouse",
+        "period": "Septembre 2025 – Août 2027",
+        "details": "Parcours ITN (Ingénierie de Transformation Numérique)"
       },
       {
-        "degree": "L2 Informatique",
-        "school": "Université de Lille"
-      },
-      {
-        "degree": "L3 Informatique",
-        "school": "Université de Lille"
-      },
-      {
-        "degree": "M1 MIAGE",
-        "school": "Université de Lille"
+        "degree": "Licence MIAGE — Méthodes Informatiques Appliquées à la Gestion des Entreprises",
+        "school": "Université Paul Sabatier, Toulouse",
+        "period": "Septembre 2022 – Août 2025",
+        "details": ""
       }
     ]
   },
