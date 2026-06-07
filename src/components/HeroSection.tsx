@@ -147,7 +147,7 @@ const HeroSection = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:abdellah.massir@toulouse.miage.fr"
+                href="mailto:abdellahmassir04@gmail.com"
                 onClick={() => handleClick()}
                 className="p-3 glass rounded-lg hover:bg-primary/10 transition-smooth hover-lift glow-sm active:scale-95"
               >
