@@ -27,12 +27,12 @@ const interestsEN: Interest[] = [
 
 const languagesFR: Language[] = [
   { name: 'Français', level: 'Bilingue' },
-  { name: 'Anglais', level: 'Intermédiaire avancé — B2' },
+  { name: 'Anglais', level: 'Avancé — C1' },
 ];
 
 const languagesEN: Language[] = [
   { name: 'French', level: 'Bilingual' },
-  { name: 'English', level: 'Advanced Intermediate — B2' },
+  { name: 'English', level: 'Advanced — C1' },
 ];
 
 const InterestsSection = () => {
