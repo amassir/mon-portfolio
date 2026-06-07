@@ -105,60 +105,28 @@
     "subtitle": "My professional evolution through different companies and projects.",
     "list": [
       {
-        "title": "Frontend and Workflow Development (Internship)",
-        "company": "Tech Link Service",
-        "period": "2025",
-        "description": "Development of a SaaS restaurant management solution and integration of external orders on a centralized interface.",
-        "highlights": ["React / Flutterflow", "TypeScript / JavaScript", "API Integrations (Uber Eats, Deliveroo)"]
+        "title": "Full-Stack Developer Intern",
+        "company": "BPCE Solutions Informatiques",
+        "location": "Toulouse",
+        "period": "April 2025 – August 2025",
+        "missions": [
+          "Redesign of a banking document management application within the Éditique Infrastructure team",
+          "Design of 3-layer application architecture, sequence diagrams and database modeling (MCD/MLD)",
+          "Spring Boot backend development: REST API, JPA entities, business services, automated tests with Mockito",
+          "Angular frontend development: management and tracking interfaces for document references"
+        ]
       },
       {
-        "title": "Web Development (Internship)",
-        "company": "Equipe MAROCVILLE",
-        "period": "2022",
-        "description": "Development of a management application (stocks, orders, customers) with Laravel and MySQL.",
-        "highlights": ["Laravel & MySQL", "Interface design", "Test automation"]
-      },
-      {
-        "title": "Versatile employee",
-        "company": "Crêpes Corner",
-        "period": "2024",
-        "description": "Point of sale mission, customer service management and operational versatility.",
-        "highlights": ["Customer service", "Teamwork", "Adaptability"]
-      },
-      {
-        "title": "Warehouse worker",
-        "company": "Equipe MAROCVILLE",
-        "period": "—",
-        "description": "Reception and documentation of products, control of damaged packages, storage on shelves and assistance to order pickers for collection and packaging.",
-        "highlights": ["Reception & control", "Inventory management", "Order preparation"]
-      },
-      {
-        "title": "Versatile employee",
-        "company": "Snack O mimosas",
-        "period": "—",
-        "description": "Customer reception and order taking, fast and accurate preparation of dishes, customer service, and maintenance of preparation and dining areas in accordance with hygiene standards.",
-        "highlights": ["Reception & order taking", "Preparation & cleanliness", "Food hygiene"]
-      },
-      {
-        "title": "Delivery driver",
-        "company": "Uber Eats",
-        "period": "—",
-        "description": "Fast and secure delivery of orders, efficient use of navigation tools and professional interaction with customers.",
-        "highlights": ["Delivery & navigation", "Customer relations", "Vehicle maintenance"]
-      },
-      {
-        "title": "Security agent (event)",
-        "company": "Football match (Ligue 1)",
-        "period": "—",
-        "description": "Ensuring the safety of spectators and staff, applying control measures and cooperating with law enforcement to prevent incidents.",
-        "highlights": ["Event security", "Crowd control", "Operational coordination"]
-      },
-      {
-        "title": "Inventory clerk",
-        "company": "RGIS",
-        "period": "Since May 2025",
-        "description": "Conducting inventories in northern France: counting, validation and reporting of discrepancies, teamwork and data accuracy.",
-        "highlights": ["Regional inventories", "Accuracy & reliability", "Teamwork"]
+        "title": "Data Analyst Assistant Intern",
+        "company": "Daher",
+        "location": "Toulouse",
+        "period": "June 2024 – August 2024",
+        "missions": [
+          "Participation in the digitalization of internal processes within the Supply Chain department",
+          "Design of interactive Power BI dashboards for performance indicator tracking (logistics KPIs, supplier delays...)",
+          "Automation of data processing flows via Power Automate (extraction, notifications, recurring updates)",
+          "SQL Server query writing for extraction, transformation and reliability of business data"
+        ]
       }
     ]
   },

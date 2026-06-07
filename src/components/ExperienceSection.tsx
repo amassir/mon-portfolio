@@ -1,71 +1,76 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import { useClickSound } from '@/hooks/useClickSound';
 import { useLocale } from '@/lib/LocaleProvider';
 
+interface Experience {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  missions: string[];
+}
+
+const experiencesFR: Experience[] = [
+  {
+    title: 'Stagiaire Développeur Full-Stack',
+    company: 'BPCE Solutions Informatiques',
+    location: 'Toulouse',
+    period: 'Avril 2025 – Août 2025',
+    missions: [
+      "Refonte d'une application de gestion documentaire bancaire au sein de l'équipe Infrastructure Éditique",
+      'Conception de l\'architecture applicative 3 couches, diagrammes de séquence et modélisation de la base de données (MCD/MLD)',
+      'Développement backend Spring Boot : API REST, entités JPA, services métier, tests automatisés avec Mockito',
+      'Développement frontend Angular : interfaces de gestion et de suivi des références documentaires',
+    ],
+  },
+  {
+    title: 'Stagiaire Assistant Analyste de Données',
+    company: 'Daher',
+    location: 'Toulouse',
+    period: 'Juin 2024 – Août 2024',
+    missions: [
+      'Participation à la digitalisation des processus internes au sein du service Supply Chain',
+      'Conception de tableaux de bord interactifs sous Power BI pour le suivi des indicateurs de performance (KPI logistiques, délais fournisseurs...)',
+      'Automatisation de flux de traitement de données via Power Automate (extraction, notifications, mises à jour récurrentes)',
+      'Rédaction de requêtes SQL Server pour extraction, transformation et fiabilisation des données métier',
+    ],
+  },
+];
+
+const experiencesEN: Experience[] = [
+  {
+    title: 'Full-Stack Developer Intern',
+    company: 'BPCE Solutions Informatiques',
+    location: 'Toulouse',
+    period: 'April 2025 – August 2025',
+    missions: [
+      'Redesign of a banking document management application within the Éditique Infrastructure team',
+      'Design of 3-layer application architecture, sequence diagrams and database modeling (MCD/MLD)',
+      'Spring Boot backend development: REST API, JPA entities, business services, automated tests with Mockito',
+      'Angular frontend development: management and tracking interfaces for document references',
+    ],
+  },
+  {
+    title: 'Data Analyst Assistant Intern',
+    company: 'Daher',
+    location: 'Toulouse',
+    period: 'June 2024 – August 2024',
+    missions: [
+      'Participation in the digitalization of internal processes within the Supply Chain department',
+      'Design of interactive Power BI dashboards for performance indicator tracking (logistics KPIs, supplier delays...)',
+      'Automation of data processing flows via Power Automate (extraction, notifications, recurring updates)',
+      'SQL Server query writing for extraction, transformation and reliability of business data',
+    ],
+  },
+];
+
 const ExperienceSection = () => {
   const { playClick } = useClickSound();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
-  const experiences = [
-    {
-      titleKey: 'exp_frontend_title',
-      companyKey: 'exp_frontend_company',
-      periodKey: 'exp_frontend_period',
-      descKey: 'exp_frontend_desc',
-      highlights: ['exp_frontend_h1', 'exp_frontend_h2', 'exp_frontend_h3'],
-    },
-    {
-      titleKey: 'exp_web_title',
-      companyKey: 'exp_web_company',
-      periodKey: 'exp_web_period',
-      descKey: 'exp_web_desc',
-      highlights: ['exp_web_h1', 'exp_web_h2', 'exp_web_h3'],
-    },
-    {
-      titleKey: 'exp_crepes_title',
-      companyKey: 'exp_crepes_company',
-      periodKey: 'exp_crepes_period',
-      descKey: 'exp_crepes_desc',
-      highlights: ['exp_crepes_h1', 'exp_crepes_h2', 'exp_crepes_h3'],
-    },
-    {
-      titleKey: 'exp_magasinier_title',
-      companyKey: 'exp_magasinier_company',
-      periodKey: 'exp_magasinier_period',
-      descKey: 'exp_magasinier_desc',
-      highlights: ['exp_magasinier_h1', 'exp_magasinier_h2', 'exp_magasinier_h3'],
-    },
-    {
-      titleKey: 'exp_snack_title',
-      companyKey: 'exp_snack_company',
-      periodKey: 'exp_snack_period',
-      descKey: 'exp_snack_desc',
-      highlights: ['exp_snack_h1', 'exp_snack_h2', 'exp_snack_h3'],
-    },
-    {
-      titleKey: 'exp_uber_title',
-      companyKey: 'exp_uber_company',
-      periodKey: 'exp_uber_period',
-      descKey: 'exp_uber_desc',
-      highlights: ['exp_uber_h1', 'exp_uber_h2', 'exp_uber_h3'],
-    },
-    {
-      titleKey: 'exp_security_title',
-      companyKey: 'exp_security_company',
-      periodKey: 'exp_security_period',
-      descKey: 'exp_security_desc',
-      highlights: ['exp_security_h1', 'exp_security_h2', 'exp_security_h3'],
-    },
-    {
-      titleKey: 'exp_rgis_title',
-      companyKey: 'exp_rgis_company',
-      periodKey: 'exp_rgis_period',
-      descKey: 'exp_rgis_desc',
-      highlights: ['exp_rgis_h1', 'exp_rgis_h2', 'exp_rgis_h3'],
-    },
-  ];
+  const experiences = locale === 'en' ? experiencesEN : experiencesFR;
 
   return (
     <section id="experience" className="section-padding relative">
@@ -86,7 +91,6 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <AnimatedSection key={index} delay={index * 0.2}>
               <div className="relative pl-8 pb-12 last:pb-0">
-                {/* Timeline line */}
                 {index !== experiences.length - 1 && (
                   <motion.div
                     initial={{ height: 0 }}
@@ -97,7 +101,6 @@ const ExperienceSection = () => {
                   />
                 )}
 
-                {/* Timeline dot */}
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
@@ -118,28 +121,30 @@ const ExperienceSection = () => {
                   onClick={playClick}
                   className="glass rounded-xl p-6 ml-4 cursor-pointer"
                 >
-                  <div className="flex flex-wrap items-center gap-4 mb-3">
-                    <h3 className="font-display font-semibold text-xl">{t(exp.titleKey)}</h3>
-                    <span className="text-primary font-medium">{t(exp.companyKey)}</span>
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 className="font-display font-semibold text-xl">{exp.title}</h3>
+                    <span className="text-primary font-medium">{exp.company}</span>
                   </div>
 
-                  <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
-                    <Calendar size={14} />
-                    {t(exp.periodKey)}
+                  <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-4">
+                    <span className="flex items-center gap-1">
+                      <Calendar size={14} />
+                      {exp.period}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MapPin size={14} />
+                      {exp.location}
+                    </span>
                   </div>
 
-                  <p className="text-muted-foreground mb-4">{t(exp.descKey)}</p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {exp.highlights.map((highlightKey) => (
-                      <span
-                        key={highlightKey}
-                        className="text-xs px-3 py-1 bg-secondary text-secondary-foreground rounded-full"
-                      >
-                        {t(highlightKey)}
-                      </span>
+                  <ul className="space-y-2">
+                    {exp.missions.map((mission, i) => (
+                      <li key={i} className="flex items-start gap-2 text-muted-foreground text-sm">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                        {mission}
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </motion.div>
               </div>
             </AnimatedSection>

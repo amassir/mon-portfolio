@@ -105,60 +105,28 @@
     "subtitle": "Mon évolution professionnelle à travers différentes entreprises et projets.",
     "list": [
       {
-        "title": "Développement Frontend et Workflow (Stage)",
-        "company": "Tech Link Service",
-        "period": "2025",
-        "description": "Développement d'une solution SaaS de gestion de restaurants et intégration de commandes externes sur une interface centralisée.",
-        "highlights": ["React / Flutterflow", "TypeScript / JavaScript", "Intégrations API (Uber Eats, Deliveroo)"]
+        "title": "Stagiaire Développeur Full-Stack",
+        "company": "BPCE Solutions Informatiques",
+        "location": "Toulouse",
+        "period": "Avril 2025 – Août 2025",
+        "missions": [
+          "Refonte d'une application de gestion documentaire bancaire au sein de l'équipe Infrastructure Éditique",
+          "Conception de l'architecture applicative 3 couches, diagrammes de séquence et modélisation de la base de données (MCD/MLD)",
+          "Développement backend Spring Boot : API REST, entités JPA, services métier, tests automatisés avec Mockito",
+          "Développement frontend Angular : interfaces de gestion et de suivi des références documentaires"
+        ]
       },
       {
-        "title": "Développement Web (Stage)",
-        "company": "Equipe MAROCVILLE",
-        "period": "2022",
-        "description": "Développement d'une application de gestion (stocks, commandes, clients) avec Laravel et MySQL.",
-        "highlights": ["Laravel & MySQL", "Design d'interface", "Automatisation des tests"]
-      },
-      {
-        "title": "Employé polyvalent",
-        "company": "Crêpes Corner",
-        "period": "2024",
-        "description": "Mission en point de vente, gestion du service client et polyvalence opérationnelle.",
-        "highlights": ["Service client", "Travail en équipe", "Adaptabilité"]
-      },
-      {
-        "title": "Magasinier",
-        "company": "Equipe MAROCVILLE",
-        "period": "—",
-        "description": "Réception et documentation des produits, contrôle des colis endommagés, rangement sur étagères et assistance aux préparateurs de commandes pour le ramassage et l'emballage.",
-        "highlights": ["Réception & contrôle", "Gestion des stocks", "Préparation de commandes"]
-      },
-      {
-        "title": "Employé polyvalent",
-        "company": "Snack O mimosas",
-        "period": "—",
-        "description": "Accueil et prise de commandes, préparation rapide et précise des plats, service clientèle, et entretien des zones de préparation et de salle en respectant les normes d'hygiène.",
-        "highlights": ["Accueil & prise de commandes", "Préparation & propreté", "Hygiène alimentaire"]
-      },
-      {
-        "title": "Livreur de commandes",
-        "company": "Uber Eats",
-        "period": "—",
-        "description": "Livraison rapide et sécurisée des commandes, utilisation efficace des outils de navigation et interaction professionnelle avec les clients.",
-        "highlights": ["Livraison & navigation", "Relation client", "Entretien du véhicule"]
-      },
-      {
-        "title": "Agent de sécurité (événement)",
-        "company": "Match de football (Ligue 1)",
-        "period": "—",
-        "description": "Assurer la sécurité des spectateurs et du personnel, appliquer les mesures de contrôle et coopérer avec les forces de l'ordre pour prévenir les incidents.",
-        "highlights": ["Sécurité événementielle", "Contrôle des foules", "Coordination opérationnelle"]
-      },
-      {
-        "title": "Inventoriste",
-        "company": "RGIS",
-        "period": "Depuis mai 2025",
-        "description": "Réalisation d'inventaires dans le nord de la France : comptage, validation et remontée des écarts, travail en équipe et rigueur des données.",
-        "highlights": ["Inventaires régionaux", "Précision & fiabilité", "Travail en équipe"]
+        "title": "Stagiaire Assistant Analyste de Données",
+        "company": "Daher",
+        "location": "Toulouse",
+        "period": "Juin 2024 – Août 2024",
+        "missions": [
+          "Participation à la digitalisation des processus internes au sein du service Supply Chain",
+          "Conception de tableaux de bord interactifs sous Power BI pour le suivi des indicateurs de performance (KPI logistiques, délais fournisseurs...)",
+          "Automatisation de flux de traitement de données via Power Automate (extraction, notifications, mises à jour récurrentes)",
+          "Rédaction de requêtes SQL Server pour extraction, transformation et fiabilisation des données métier"
+        ]
       }
     ]
   },
