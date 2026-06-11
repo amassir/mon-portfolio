@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Github, Linkedin, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -18,9 +18,6 @@ const Footer = () => {
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               <Linkedin size={20} />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter size={20} />
             </a>
           </div>
         </div>
