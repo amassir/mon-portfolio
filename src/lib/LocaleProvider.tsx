@@ -16,7 +16,7 @@ const translations: Record<Locale, Record<string, string>> = {
         nav_contact: 'Contact',
         hero_hello: 'Bonjour, je suis',
         hero_title_role: 'Étudiant M1 MIAGE — En recherche d\'alternance',
-        hero_description: "Curieux et rigoureux, je me spécialise dans le développement web et la conception d'applications innovantes. Je suis à la recherche d'une alternance en développement pour contribuer à des projets concrets et approfondir mes compétences techniques.",
+        hero_description: "Étudiant en Master MIAGE, je recherche une alternance de 12 mois pour ma deuxième année de master à partir de septembre (rythme 1 mois en entreprise / 1 mois en formation).\nCurieux, rigoureux et motivé, je souhaite participer à des projets concrets pour développer mes compétences.",
         hero_cta_contact: 'Me contacter',
         hero_download_cv: 'Télécharger CV',
         about_title: 'À propos de moi',
