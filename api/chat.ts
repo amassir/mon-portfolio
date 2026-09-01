@@ -28,7 +28,7 @@ export default async function handler(req: any, res: any) {
             {
               role: "system",
               content:
-                "Tu es le chatbot du portfolio d’un étudiant en M1 MIAGE passionné par le développement. Réponds de façon professionnelle et concise.",
+                "Tu es le chatbot du portfolio d’un étudiant en M2 MIAGE passionné par le développement. Réponds de façon professionnelle et concise.",
             },
             {
               role: "user",
