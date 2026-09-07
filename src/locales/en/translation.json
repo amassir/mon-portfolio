@@ -32,7 +32,6 @@
     "title": "About",
     "titleHighlight": "me",
     "paragraph1": "Master's degree student in Computer Science (MIAGE), I specialize in web development and the design of innovative applications. Curious, rigorous and motivated, I am looking for an alternance in development to deepen my skills and actively contribute to concrete projects.",
-    "paragraph2": "I have worked on various projects: websites (recipes, e-commerce), real-time applications (auctions, chat), and games in Java. I use technologies such as HTML, CSS, JavaScript, PHP (Laravel), MySQL, as well as design tools like Figma.",
     "paragraph3": "Passionate about software quality and cybersecurity, I am also interested in distributed architectures, test automation and user experience.",
     "skills": {
       "frontend": {

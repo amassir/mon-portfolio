@@ -45,16 +45,6 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.25 }}
-                className="text-muted-foreground leading-relaxed"
-              >
-                {t('about_p2')}
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-muted-foreground leading-relaxed"
               >
