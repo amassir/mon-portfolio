@@ -5,8 +5,8 @@ import { useClickSound } from '@/hooks/useClickSound';
 import { useLocale } from '@/lib/LocaleProvider';
 
 const skills = [
-  { icon: Code, label: 'Frontend', techs: 'React, Vue, TypeScript' },
-  { icon: Zap, label: 'Backend', techs: 'Node.js, Python, SQL' },
+  { icon: Code, label: 'Frontend', techs: 'Angular, React, Vue.js' },
+  { icon: Zap, label: 'Backend', techs: 'Spring Boot, Node.js, Laravel' },
   { icon: Palette, label: 'Design', techs: 'Figma, UI/UX' },
   { icon: Globe, label: 'DevOps', techs: 'Docker, AWS, CI/CD' },
 ];
@@ -30,7 +30,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <AnimatedSection delay={0.2}>
-            <div className="space-y-6">
+            <div>
               <motion.p
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -41,15 +41,6 @@ const AboutSection = () => {
                 {t('about_p1')}
               </motion.p>
 
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-muted-foreground leading-relaxed"
-              >
-                {t('about_p3')}
-              </motion.p>
             </div>
           </AnimatedSection>
 
